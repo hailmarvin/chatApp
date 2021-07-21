@@ -1,4 +1,10 @@
 # ChatApp
+A simple chat app with functionalities like 
+```
+  Authentication
+  Sending a text
+  Receiving a text
+```
 
 To start your Phoenix server:
 
