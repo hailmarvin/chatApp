@@ -17,6 +17,7 @@ defmodule ChatAppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/signup", UserController
   end
 
   # Other scopes may use custom stacks.
