@@ -46,6 +46,8 @@ defmodule ChatApp.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:cowboy, "< 2.8.0", override: true},
+      {:comeonin, "~> 5.3"},
+      {:bcrypt_elixir, "~> 2.3"}
     ]
   end
 

@@ -12,7 +12,12 @@
     <header style="padding: 10px 20px;">      
       <h3>ChatApp</h3>
       <span>
-        <%= link "Sign up", to: Routes.user_path(@conn, :new) %>
+        <%= if signed_in?(@conn) do %>
+          <%= link "Sign out", to: Routes.session_path(@conn, :delete), method: :delete %>
+        <% else %>
+          <%= link "Sign In", to: Routes.session_path(@conn, :new)  %>
+          <%= link "Sign up", to: Routes.user_path(@conn, :new) %>
+        <% end %>
       </span>
     </header>
     <main role="main" class="container">
